@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Söğüt Dergisi Flipbook - Sayı 1</title>
+<style>
+body{ background:#eee; display:flex; justify-content:center; align-items:center; height:100vh; margin:0; }
+#flipbook{ width:800px; height:600px; }
+#flipbook .page{ width:100%; height:100%; }
+#flipbook .page img{ width:100%; height:100%; object-fit:contain; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.js"></script>
+</head>
+<body>
+<div id="flipbook">
+<div class="page"><img src="page01.jpg" alt="Söğüt Dergisi Sayfa 1"></div>
+<div class="page"><img src="page02.jpg" alt="Söğüt Dergisi Sayfa 2"></div>
+<div class="page"><img src="page03.jpg" alt="Söğüt Dergisi Sayfa 3"></div>
+<div class="page"><img src="page04.jpg" alt="Söğüt Dergisi Sayfa 4"></div>
+<div class="page"><img src="page05.jpg" alt="Söğüt Dergisi Sayfa 5"></div>
+<div class="page"><img src="page06.jpg" alt="Söğüt Dergisi Sayfa 6"></div>
+<div class="page"><img src="page07.jpg" alt="Söğüt Dergisi Sayfa 7"></div>
+<div class="page"><img src="page08.jpg" alt="Söğüt Dergisi Sayfa 8"></div>
+<div class="page"><img src="page09.jpg" alt="Söğüt Dergisi Sayfa 9"></div>
+<div class="page"><img src="page10.jpg" alt="Söğüt Dergisi Sayfa 10"></div>
+<div class="page"><img src="page11.jpg" alt="Söğüt Dergisi Sayfa 11"></div>
+<div class="page"><img src="page12.jpg" alt="Söğüt Dergisi Sayfa 12"></div>
+<div class="page"><img src="page13.jpg" alt="Söğüt Dergisi Sayfa 13"></div>
+<div class="page"><img src="page14.jpg" alt="Söğüt Dergisi Sayfa 14"></div>
+<div class="page"><img src="page15.jpg" alt="Söğüt Dergisi Sayfa 15"></div>
+<div class="page"><img src="page16.jpg" alt="Söğüt Dergisi Sayfa 16"></div>
+</div>
+<script>
+$(function(){
+  $("#flipbook").turn({
+      width: 800,
+      height: 600,
+      autoCenter: true
+  });
+});
+</script>
+</body>
+</html>
